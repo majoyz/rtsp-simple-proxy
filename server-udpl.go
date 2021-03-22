@@ -1,4 +1,4 @@
-package rtsp-simple-proxy
+package rtsp
 
 import (
 	"log"
