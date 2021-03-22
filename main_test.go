@@ -137,7 +137,7 @@ func TestProtocols(t *testing.T) {
 				"    protocol: "+pair[0]+"\n"),
 				0644)
 
-			p, err := newProgram([]string{})
+			p, err := NewProgram([]string{})
 			require.NoError(t, err)
 			defer p.close()
 
@@ -199,7 +199,7 @@ func TestStreamAuth(t *testing.T) {
 		"    protocol: udp\n"),
 		0644)
 
-	p, err := newProgram([]string{})
+	p, err := NewProgram([]string{})
 	require.NoError(t, err)
 	defer p.close()
 
@@ -258,7 +258,7 @@ func TestServerAuth(t *testing.T) {
 		"    protocol: udp\n"),
 		0644)
 
-	p, err := newProgram([]string{})
+	p, err := NewProgram([]string{})
 	require.NoError(t, err)
 	defer p.close()
 

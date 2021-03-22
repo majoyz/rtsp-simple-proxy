@@ -100,7 +100,7 @@ type program struct {
 	udplRtcp     *serverUdpListener
 }
 
-func newProgram(sargs []string) (*program, error) {
+func NewProgram(sargs []string) (*program, error) {
 	kingpin.CommandLine.Help = "rtsp-simple-proxy " + Version + "\n\n" +
 		"RTSP proxy."
 
@@ -235,7 +235,7 @@ func (p *program) close() {
 }
 
 func main() {
-	_, err := newProgram(os.Args[1:])
+	_, err := NewProgram(os.Args[1:])
 	if err != nil {
 		log.Fatal("ERR: ", err)
 	}
