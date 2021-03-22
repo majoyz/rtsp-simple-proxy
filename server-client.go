@@ -1,4 +1,4 @@
-package main
+package rtsp-simple-proxy
 
 import (
 	"errors"
