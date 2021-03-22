@@ -1,4 +1,4 @@
-module rtsp-simple-proxy
+module github.com/majoyz/rtsp-simple-proxy
 
 go 1.13
 
